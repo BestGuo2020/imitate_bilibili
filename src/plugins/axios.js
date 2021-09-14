@@ -12,7 +12,7 @@ let config = {
   // baseURL: process.env.baseURL || process.env.apiUrl || ""
   // timeout: 60 * 1000, // Timeout
   // withCredentials: true, // Check cross-site Access-Control
-  baseURL: "https://api.bilibili.com/x/web-interface/"
+  // baseURL: "https://api.bilibili.com/x/web-interface/"
 };
 
 const _axios = axios.create(config);
