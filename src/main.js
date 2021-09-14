@@ -18,6 +18,9 @@ Vue.use(VueLazyLoad, {
   attempt: 1
 })
 
+// 配置代理
+axios.defaults.baseURL = "https://api.bilibili.com/x/web-interface/"
+
 new Vue({
   router,
   store,
