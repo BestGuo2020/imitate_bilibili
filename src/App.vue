@@ -1,32 +1,33 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <Main/>
   </div>
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
 
-#nav {
-  padding: 30px;
-}
+  @import url(https://s1.hdslb.com/bfs/static/jinkela/mstation-h5/css/mstation.4.fe7e458082ef5af1d663dd1b65f365d1b753903f.css);
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+  body {
+    margin: 0 auto;
+    width: 100%;
+    overflow-x: hidden;
+  }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+  .router-link-exact-active, .router-link-active {
+    color: #fb7299;
+  }
+
 </style>
+
+<script>
+  import Main from '@/views/Main'
+
+  export default {
+    name: "App",
+    components: {
+      Main
+    }
+  }
+
+</script>
